@@ -1,0 +1,139 @@
+.header {
+  position: relative;
+  position: fixed;
+  width: 100%;
+  .dim {
+    height: 100vh;
+    width: 25%;
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: -100rem;
+    transition: 0.5s ease;
+    &.open {
+      right: 75%;
+      transition: 0.5s ease;
+    }
+  }
+  &__nav {
+    position: absolute;
+    background: $clr-light;
+    top: 0rem;
+    right: -100rem;
+    height: 100vh;
+    width: 75%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    &.open {
+      right: 0rem;
+      transition: 0.5s ease;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      figure {
+        padding-top: 0.8rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid gray;
+        width: 100%;
+      }
+      li {
+        padding: 1.5rem;
+        a {
+          color: $clr-dark;
+        }
+        &:hover {
+          a {
+            text-decoration: underline;
+          }
+        }
+        &.active {
+          background: hsl(0, 0%, 90%);
+          a {
+            color: hsl(203, 89%, 53%);
+          }
+        }
+      }
+    }
+    a.download {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .toggle__menu {
+      span {
+        width: 2.5rem;
+        height: 0.3rem;
+        background-color: $clr-light;
+        display: block;
+        transition: 0.5s ease;
+        &:nth-child(2) {
+          margin: 0.5rem 0;
+        }
+      }
+      &.open {
+        span {
+          background-color: $clr-dark;
+          z-index: 999;
+          transition: 0.5s ease;
+        }
+        span:first-child {
+          transform: translate(0, 7px) rotate(225deg);
+          transition: 0.5s ease;
+        }
+        span:nth-child(2) {
+          opacity: 0;
+          transition: 0.5s ease;
+        }
+        span:last-child {
+          transform: translate(0, -9px) rotate(-225deg);
+          transition: 0.5s ease;
+        }
+      }
+    }
+  }
+
+  /*--BREAKPOINT LARGE--*/
+  @include mediaQuery($break-lg) {
+    .toggle__menu {
+      display: none;
+    }
+    &__nav {
+      position: unset;
+      height: fit-content;
+      width: unset;
+      background-color: transparent;
+      ul {
+        flex-direction: row;
+        figure {
+          display: none;
+        }
+        li {
+          padding: 0;
+          a {
+            color: $clr-light;
+          }
+          &.active {
+            background: none;
+            a {
+              color: $clr-light;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      a.download {
+        display: none;
+      }
+    }
+  }
+}

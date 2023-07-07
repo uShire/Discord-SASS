@@ -1,0 +1,154 @@
+.banner {
+  padding-top: 13rem;
+  background-image: url("../img/banner2.png");
+  background-size: cover;
+  background-position: 55% center;
+  min-height: 720px;
+  &__content {
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.8rem;
+      margin: 3rem 0;
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      a {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
+  @include mediaQuery($break-lg) {
+    background-image: url("../img/Discord\ Home\ Banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $clr-violet;
+    background-position-y: bottom;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding-top: 0rem;
+    &__content {
+      text-align: center;
+      max-width: 80rem;
+      margin: 0 auto;
+      h1 {
+        font-size: 7rem;
+      }
+      p {
+        font-size: 2.5rem;
+      }
+      &__btn {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.use {
+  &__item {
+    padding: 5rem 2rem;
+    background: $clr-light;
+    &__content {
+      img {
+        @include imgFit(100%, 100%);
+      }
+      &__text {
+        h3 {
+          font-size: 2rem;
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+  &__item:nth-child(2) {
+    background: hsl(0, 0%, 95%);
+  }
+  @include mediaQuery($break-lg) {
+    &__item {
+      &__content {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        img {
+          @include imgFit(70rem, 100%);
+        }
+        &__text {
+          color: $clr-dark;
+          h3 {
+            font-size: 5rem;
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    &__item:nth-child(2) {
+      .use__item__content {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+.tech {
+  padding: 5rem 0;
+  background: hsl(0, 0%, 95%);
+  &__text {
+    p {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+    img {
+      @include imgFit(100%, 100%);
+    }
+  }
+  &__btn {
+    margin-top: 5rem;
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+      font-size: 2rem;
+    }
+  }
+  @include mediaQuery($break-lg) {
+    &__text {
+      text-align: center;
+      h1 {
+        font-size: 4.5rem;
+      }
+      p {
+        font-size: 2.5rem;
+        max-width: 100rem;
+        margin: 2rem auto 5rem auto;
+      }
+    }
+    &__btn {
+      text-align: center;
+      a {
+        width: fit-content;
+      }
+    }
+  }
+}
