@@ -1995,8 +1995,9 @@ body {
   padding-bottom: 4rem;
 }
 .uni__wrapper__comp__tr {
+  padding: 2.5rem 2rem;
   background: hsl(0, 0%, 100%);
-  min-height: 35rem;
+  height: 50rem;
   border-radius: 2rem;
   margin-bottom: 3rem;
 }
@@ -2025,6 +2026,7 @@ body {
   text-align: right;
   align-self: baseline;
   color: hsl(235, 87%, 65%);
+  width: 100%;
 }
 .uni__btn h1 {
   padding: 4rem 0 2rem 0;
@@ -2055,6 +2057,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
+  .uni__wrapper__comp__tr__txt {
+    position: relative;
+  }
   .uni__wrapper__comp__tr__txt img {
     width: 5rem;
     height: 5rem;
@@ -2069,8 +2074,8 @@ body {
     text-align: justify;
   }
   .uni__wrapper__comp__tr__txt p {
-    align-self: flex-end;
-    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
   }
   .uni__btn {
     padding-top: 8rem;

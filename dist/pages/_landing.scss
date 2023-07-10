@@ -357,8 +357,9 @@
     }
     &__comp{
     &__tr{
+      padding: 2.5rem 2rem;
       background: $clr-light;
-      min-height: 35rem;
+      height: 50rem;
       border-radius: 2rem;
       margin-bottom: 3rem;
       &__txt{
@@ -382,6 +383,7 @@
         // margin-left: 25rem;
         // padding-right: 3rem;
         color: $clr-violet;
+        width: 100%;
       }
       }
 
@@ -426,6 +428,7 @@
         gap: 2rem;
         &__tr{
           &__txt{
+            position: relative;
             img{
               @include imgFit(5rem, 5rem)
             }
@@ -434,8 +437,8 @@
               text-align: justify;
             }
             p{
-              align-self: flex-end;
-              justify-content: flex-end;
+              position: absolute;
+              bottom: 0;
             }
           }
         }
