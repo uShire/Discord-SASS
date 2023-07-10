@@ -313,11 +313,19 @@
   @include mediaQuery($break-lg){
     &__wrapper{
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1.5fr 2.5fr;
+      align-items: center;
+      gap: 5rem;
+      .nd__text{
+        &__wrapper{
+          display: grid;
+          grid-template-columns: 2fr 2fr;
+        }
+      }
       &__img{
         img{
           padding-top: 15rem;
-          @include imgFit(60rem, 100%)
+          @include imgFit(100%, 100%)
         }
       }
       &__tl{
@@ -349,15 +357,16 @@
     }
     &__comp{
     &__tr{
+      background: $clr-light;
+      min-height: 35rem;
+      border-radius: 2rem;
       margin-bottom: 3rem;
       &__txt{
-        background: $clr-light;
-        padding-bottom: 3rem;
-        padding-top: 1rem;
-        border-radius: 2rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
         img{
-         padding-bottom: 3rem;
-         padding-left: 1rem;
           @include imgFit (10%, 10%)
          }
          h5{  
@@ -368,9 +377,10 @@
       }
       p{
         text-align: right;
-        padding-top: 4rem;
-        margin-left: 25rem;
-        padding-right: 3rem;
+        align-self: baseline;
+        // padding-top: 4rem;
+        // margin-left: 25rem;
+        // padding-right: 3rem;
         color: $clr-violet;
       }
       }
@@ -406,26 +416,26 @@
     &__wrapper{
       &__tl{
         text-align: left;
-        p{
-          padding-bottom: 8rem;
-        }
+        // p{
+        //   padding-bottom: 8rem;
+        // }
       }
       &__comp{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
         &__tr{
           &__txt{
             img{
-              @include imgFit(5rem, 15%)
+              @include imgFit(5rem, 5rem)
             }
             h5{
               margin: 0 auto;
               text-align: justify;
             }
             p{
-              text-align: right;
-              margin: 0 auto;
+              align-self: flex-end;
+              justify-content: flex-end;
             }
           }
         }

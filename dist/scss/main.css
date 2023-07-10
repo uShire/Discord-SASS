@@ -1952,11 +1952,17 @@ body {
 @media screen and (min-width: 960px) {
   .nd__wrapper {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1.5fr 2.5fr;
+    align-items: center;
+    gap: 5rem;
+  }
+  .nd__wrapper .nd__text__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
   }
   .nd__wrapper__img img {
     padding-top: 15rem;
-    width: 60rem;
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1989,17 +1995,18 @@ body {
   padding-bottom: 4rem;
 }
 .uni__wrapper__comp__tr {
+  background: hsl(0, 0%, 100%);
+  min-height: 35rem;
+  border-radius: 2rem;
   margin-bottom: 3rem;
 }
 .uni__wrapper__comp__tr__txt {
-  background: hsl(0, 0%, 100%);
-  padding-bottom: 3rem;
-  padding-top: 1rem;
-  border-radius: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 .uni__wrapper__comp__tr__txt img {
-  padding-bottom: 3rem;
-  padding-left: 1rem;
   width: 10%;
   height: 10%;
   -o-object-fit: cover;
@@ -2016,9 +2023,7 @@ body {
 }
 .uni__wrapper__comp__tr__txt p {
   text-align: right;
-  padding-top: 4rem;
-  margin-left: 25rem;
-  padding-right: 3rem;
+  align-self: baseline;
   color: hsl(235, 87%, 65%);
 }
 .uni__btn h1 {
@@ -2045,17 +2050,14 @@ body {
   .uni__wrapper__tl {
     text-align: left;
   }
-  .uni__wrapper__tl p {
-    padding-bottom: 8rem;
-  }
   .uni__wrapper__comp {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
   .uni__wrapper__comp__tr__txt img {
     width: 5rem;
-    height: 15%;
+    height: 5rem;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-fit: center center;
@@ -2067,8 +2069,8 @@ body {
     text-align: justify;
   }
   .uni__wrapper__comp__tr__txt p {
-    text-align: right;
-    margin: 0 auto;
+    align-self: flex-end;
+    justify-content: flex-end;
   }
   .uni__btn {
     padding-top: 8rem;
