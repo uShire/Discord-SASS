@@ -1887,7 +1887,7 @@ body {
 }
 .yt__wrapper iframe {
   border-radius: 20px;
-  width: 95%;
+  width: 85%;
   height: 25rem;
 }
 @media screen and (min-width: 960px) {
@@ -1902,7 +1902,7 @@ body {
     padding-bottom: 5rem;
   }
   .yt__wrapper iframe {
-    width: 80%;
+    width: 75%;
     height: 50rem;
   }
 }
@@ -2087,5 +2087,178 @@ body {
   }
   .uni__btn__a a {
     padding: 2rem;
+  }
+}
+
+/*-------SUPPORT PAGE------*/
+.hp {
+  background-image: url("../img/support.png");
+  background-size: 205% 100%;
+  background-position: center;
+  height: 43rem;
+  width: 100%;
+}
+.hp__wrapper__text h1 {
+  padding-top: 13rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.hp__wrapper__text__bar {
+  padding-top: 5rem;
+  text-align: center;
+}
+.hp__wrapper__text__bar form input {
+  font-size: 2rem;
+  padding-right: 25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .hp {
+    background-size: cover;
+  }
+  .hp__wrapper__text__bar form input {
+    padding-right: 45rem;
+  }
+}
+
+.gd__wrapper__components__title {
+  margin: 0 1rem;
+}
+.gd__wrapper__components__title h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding-top: 7rem;
+}
+.gd__wrapper__components__title p {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+}
+.gd__wrapper__components__title p a {
+  color: hsl(235, 87%, 65%);
+}
+.gd__wrapper__components__box__1 ul a li {
+  border: 1px solid hsl(0, 0%, 90%);
+  box-sizing: border-box;
+  border-radius: 1rem;
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.gd__wrapper__components__box__1 ul a li i {
+  font-size: 6rem;
+  padding-top: 3rem;
+  color: hsl(39, 50%, 70%);
+}
+.gd__wrapper__components__box__1 ul a li h2 {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  color: hsl(235, 87%, 65%);
+}
+.gd__wrapper__components__box__1 ul a li p {
+  text-align: center;
+  color: hsl(206, 9%, 15%);
+}
+.gd__wrapper__components__box__1 ul a li:hover {
+  background: hsl(0, 0%, 98%);
+}
+.gd__wrapper__components__box__2 ul a li {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 1rem;
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.gd__wrapper__components__box__2 ul a li i {
+  font-size: 6rem;
+  padding-top: 3rem;
+  color: hsl(39, 50%, 70%);
+}
+.gd__wrapper__components__box__2 ul a li h2 {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  color: hsl(235, 87%, 65%);
+}
+.gd__wrapper__components__box__2 ul a li p {
+  text-align: center;
+  color: hsl(206, 9%, 15%);
+}
+.gd__wrapper__components__box__2 ul a li:hover {
+  background: hsl(0, 0%, 98%);
+}
+@media screen and (min-width: 960px) {
+  .gd__wrapper__components__title p {
+    padding-bottom: 8rem;
+  }
+  .gd__wrapper__components__box__1 ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
+  .gd__wrapper__components__box__1 ul a li {
+    margin: 0;
+    width: 25rem;
+  }
+  .gd__wrapper__components__box__2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
+  .gd__wrapper__components__box__2 ul a li {
+    margin: 0;
+    width: 25rem;
+  }
+}
+
+.find__wrapper__contain__title {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.find__wrapper__contain__boxes ul a li {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 1rem;
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.find__wrapper__contain__boxes ul a li i {
+  font-size: 6rem;
+  padding-top: 3rem;
+  color: hsl(39, 50%, 70%);
+}
+.find__wrapper__contain__boxes ul a li h2 {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  color: hsl(235, 87%, 65%);
+}
+.find__wrapper__contain__boxes ul a li p {
+  text-align: center;
+  color: hsl(206, 9%, 15%);
+}
+.find__wrapper__contain__boxes ul a li:hover {
+  background: hsl(0, 0%, 98%);
+}
+@media screen and (min-width: 960px) {
+  .find__wrapper__contain__boxes ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 6rem;
+  }
+  .find__wrapper__contain__boxes ul a li {
+    height: 30rem;
+    width: 25rem;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */
