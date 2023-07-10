@@ -54,6 +54,14 @@ body {
   color: hsl(206, 9%, 15%);
 }
 
+.bg--blue {
+  background: hsl(203, 89%, 53%);
+}
+
+.text--blue {
+  color: hsl(203, 89%, 53%);
+}
+
 /*--------DISPLAY-----------*/
 .d--none {
   display: none;
@@ -2074,5 +2082,207 @@ body {
   }
   .safety_mod_left_content p {
     font-size: 1.57rem;
+  }
+}
+
+.streamkit {
+  padding-top: 11rem;
+  padding-bottom: 4rem;
+}
+.streamkit_content_text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.streamkit_content_text p {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 960px) {
+  .streamkit {
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+  }
+  .streamkit_content_text h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .streamkit_content_text p {
+    font-size: 1.8rem;
+  }
+}
+
+.bots_wrapper {
+  padding: 4rem 0;
+}
+.bots_content {
+  margin-bottom: 5rem;
+}
+.bots_content_text h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+.bots_content_text p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  max-width: 40rem;
+}
+.bots_tools_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.bots_tools_item img {
+  width: 45%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: center center;
+     object-fit: center center;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.bots_tools_item h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.bots_tools_item p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 960px) {
+  .bots_wrapper {
+    padding: 11rem 0;
+  }
+  .bots_content h2 {
+    font-size: 3rem;
+  }
+  .bots_content p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    max-width: none;
+    margin-bottom: 9rem;
+  }
+  .bots_tools {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .bots_tools_item img {
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-fit: center center;
+       object-fit: center center;
+    display: block;
+  }
+  .bots_tools_item p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+.apps {
+  background: hsl(0, 0%, 95%);
+}
+.apps_wrapper {
+  padding: 4rem 0;
+}
+.apps_title {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.apps_title h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+.apps_title p {
+  font-size: 1.55rem;
+  line-height: 2.5rem;
+}
+.apps_content {
+  padding: 0 1rem;
+  padding-bottom: 5rem;
+}
+.apps_content_item {
+  background: hsl(0, 0%, 100%);
+  padding: 4rem;
+  border-radius: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.apps_content_item img {
+  max-width: 7rem;
+  margin-bottom: 1rem;
+}
+.apps_content_item_text {
+  margin-bottom: 2rem;
+}
+.apps_content_item_text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.apps_content_item_text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.apps_content_item_text h5 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 35rem;
+}
+.apps_content_item_text h5 i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: hsl(150, 100%, 52%);
+}
+.apps_content_item_btn a {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  font-size: 1.4rem;
+}
+.apps_content_item_link {
+  font-size: 1.4rem;
+  display: inline-flex;
+  gap: 2rem;
+}
+@media screen and (min-width: 960px) {
+  .apps_wrapper {
+    padding: 11rem 0;
+  }
+  .apps_title {
+    margin-bottom: 7rem;
+  }
+  .apps_title h1 {
+    font-size: 4.5rem;
+  }
+  .apps_title p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+  }
+  .apps_content {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 3rem;
+  }
+  .apps_content_item {
+    padding: 8rem;
+  }
+  .apps_content_item_text p {
+    max-width: 38rem;
+  }
+  .apps_content_item_text h5 {
+    max-width: 40rem;
   }
 }/*# sourceMappingURL=main.css.map */
