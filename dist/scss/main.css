@@ -31,11 +31,11 @@ body {
 
 /*--------COLORS-----------*/
 .bg--violet {
-  background: hsl(235, 83%, 59%);
+  background: hsl(235, 87%, 65%);
 }
 
 .text--violet {
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
 }
 
 .bg--light {
@@ -1423,7 +1423,7 @@ body {
   padding: 3rem 0;
 }
 .footer__desc__item h4 {
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
   margin-bottom: 1.5rem;
 }
 .footer__desc__item ul {
@@ -1438,7 +1438,7 @@ body {
   text-decoration: underline;
 }
 .footer__btn {
-  border-top: 1px solid hsl(235, 83%, 59%);
+  border-top: 1px solid hsl(235, 87%, 65%);
   padding-top: 3rem;
   display: flex;
   align-items: center;
@@ -1623,7 +1623,7 @@ body {
   background: hsl(0, 0%, 100%);
 }
 .btn.bg--violet {
-  background: hsl(235, 83%, 59%);
+  background: hsl(235, 87%, 65%);
   color: hsl(0, 0%, 100%);
 }
 .btn.bg--dark {
@@ -1665,7 +1665,7 @@ body {
     background-image: url("../img/Discord Home Banner.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: hsl(235, 83%, 59%);
+    background-color: hsl(235, 87%, 65%);
     background-position-y: bottom;
     min-height: 650px;
     display: flex;
@@ -1805,15 +1805,17 @@ body {
 .college__content {
   color: hsl(0, 0%, 100%);
   margin: 0 1rem;
-  line-height: 1;
   text-align: center;
 }
 .college__content h1 {
   font-size: 5rem;
   padding-bottom: 2rem;
+  line-height: 1;
 }
 .college__content p {
   padding-bottom: 5rem;
+  line-height: 2;
+  margin: 0 3rem;
 }
 .college__content__btn {
   display: flex;
@@ -1834,12 +1836,13 @@ body {
     background-image: url(../img/college-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: hsl(235, 83%, 59%);
+    background-color: hsl(235, 87%, 65%);
     background-position-y: bottom;
     min-height: 650px;
     display: flex;
     align-items: center;
     padding-top: 0rem;
+    padding-bottom: 10rem;
   }
   .college__content {
     text-align: justify;
@@ -1851,6 +1854,7 @@ body {
   .college__content p {
     max-width: 30%;
     line-height: 1.5;
+    margin: 0;
   }
   .college__content__btn {
     display: flex;
@@ -1862,5 +1866,219 @@ body {
   }
   .college__content__btn a i {
     display: contents;
+  }
+}
+
+.yt {
+  background: hsl(0, 0%, 95%);
+}
+.yt__wrapper {
+  padding: 4rem 0;
+  text-align: center;
+}
+.yt__wrapper h1 {
+  margin: 0 2rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.yt__wrapper p {
+  margin: 0 4rem;
+  padding-bottom: 3rem;
+}
+.yt__wrapper iframe {
+  border-radius: 20px;
+  width: 95%;
+  height: 25rem;
+}
+@media screen and (min-width: 960px) {
+  .yt__wrapper {
+    padding-top: 8rem;
+  }
+  .yt__wrapper h1 {
+    font-size: 4rem;
+  }
+  .yt__wrapper p {
+    font-size: 2rem;
+    padding-bottom: 5rem;
+  }
+  .yt__wrapper iframe {
+    width: 80%;
+    height: 50rem;
+  }
+}
+
+.nd__wrapper__img img {
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: center center;
+     object-fit: center center;
+  display: block;
+}
+.nd__wrapper__tl {
+  margin: 0 1rem;
+}
+.nd__wrapper__tl h1 {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  font-size: 3.5rem;
+}
+.nd__wrapper__tl p {
+  font-size: 2rem;
+  padding-bottom: 5rem;
+  width: 95%;
+}
+.nd__wrapper__comp__con {
+  margin: 0 1rem;
+}
+.nd__wrapper__comp__con i {
+  color: hsl(235, 87%, 65%);
+  background: hsl(0, 0%, 95%);
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+.nd__wrapper__comp__con h1 {
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+.nd__wrapper__comp__con p {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  width: 95%;
+}
+@media screen and (min-width: 960px) {
+  .nd__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .nd__wrapper__img img {
+    padding-top: 15rem;
+    width: 60rem;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-fit: center center;
+       object-fit: center center;
+    display: block;
+  }
+  .nd__wrapper__tl h1 {
+    font-size: 4rem;
+  }
+  .nd__wrapper__tl p {
+    font-size: 2rem;
+  }
+}
+
+.uni {
+  background: hsl(0, 0%, 95%);
+}
+.uni__wrapper__tl {
+  text-align: center;
+  margin: 0 2rem;
+}
+.uni__wrapper__tl h1 {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  font-size: 3.5rem;
+}
+.uni__wrapper__tl p {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+}
+.uni__wrapper__comp__tr {
+  margin-bottom: 3rem;
+}
+.uni__wrapper__comp__tr__txt {
+  background: hsl(0, 0%, 100%);
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  border-radius: 2rem;
+}
+.uni__wrapper__comp__tr__txt img {
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  width: 10%;
+  height: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: center center;
+     object-fit: center center;
+  display: block;
+}
+.uni__wrapper__comp__tr__txt h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 3rem;
+  padding: 0 2rem;
+}
+.uni__wrapper__comp__tr__txt p {
+  text-align: right;
+  padding-top: 4rem;
+  margin-left: 25rem;
+  padding-right: 3rem;
+  color: hsl(235, 87%, 65%);
+}
+.uni__btn h1 {
+  padding: 4rem 0 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+.uni__btn__a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.uni__btn__a a {
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+.uni__btn__a a i {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 960px) {
+  .uni__wrapper__tl {
+    text-align: left;
+  }
+  .uni__wrapper__tl p {
+    padding-bottom: 8rem;
+  }
+  .uni__wrapper__comp {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+  }
+  .uni__wrapper__comp__tr__txt img {
+    width: 5rem;
+    height: 15%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-fit: center center;
+       object-fit: center center;
+    display: block;
+  }
+  .uni__wrapper__comp__tr__txt h5 {
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .uni__wrapper__comp__tr__txt p {
+    text-align: right;
+    margin: 0 auto;
+  }
+  .uni__btn {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+  .uni__btn__a {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .uni__btn__a a {
+    padding: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */

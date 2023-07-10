@@ -162,14 +162,16 @@
   &__content{
       color: $clr-light;
       margin: 0 1rem;
-      line-height: 1;
       text-align: center;
       h1{
           font-size: 5rem;
           padding-bottom: 2rem;
+          line-height: 1;
       }
       p{
           padding-bottom: 5rem;
+          line-height: 2;
+          margin: 0 3rem;
       }
       &__btn{
           display: flex;
@@ -181,7 +183,7 @@
               justify-content: center;
               font-size: 2rem;
               i{
-                  display: none;
+                display: none;
               }
           }
       }
@@ -197,6 +199,7 @@
       display: flex;
       align-items: center;
       padding-top: 0rem;
+      padding-bottom: 10rem;
       &__content{
           text-align: justify;
           h1{
@@ -206,6 +209,7 @@
           p{
               max-width: 30%;
               line-height: 1.5;
+              margin: 0;
           }
           &__btn{
               display: flex;
@@ -221,4 +225,222 @@
           }
       }
   }
+}
+
+.yt{
+  background: hsl(0, 0%, 95%);
+  &__wrapper{
+    padding: 4rem 0;
+    text-align: center;
+    h1{
+      margin: 0 2rem;
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+    p{
+      margin: 0 4rem;
+      padding-bottom: 3rem;
+    }
+    iframe{
+      border-radius: 20px;
+      width: 95%;
+      height: 25rem;
+    }
+
+  }
+  @include mediaQuery($break-lg){
+    &__wrapper{
+      padding-top: 8rem;
+      h1{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 2rem;
+        padding-bottom: 5rem;
+      }
+      iframe{
+        width: 80%;
+        height: 50rem;
+      }
+    }
+  }
+  
+}
+.nd{
+  &__wrapper{
+    &__img{
+      img{
+        padding-top: 5rem;
+        @include imgFit(100%, 100%)
+      }
+    }
+    &__tl{
+      margin: 0 1rem;
+      h1{
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        font-size: 3.5rem;
+      }
+      p{
+        font-size: 2rem;
+        padding-bottom: 5rem;
+        width: 95%;
+      }
+    }
+    &__comp{
+      &__con{
+        margin: 0 1rem;
+        i{
+          color: $clr-violet;
+          background: hsl(0, 0%, 95%);
+          font-size: 2rem;
+          padding: 1rem;
+          border-radius: 5rem;
+        }
+        h1{
+          font-size: 3.5rem;
+          padding: 1rem 0;
+          
+        }
+        p{
+          font-size: 2rem;
+          padding-bottom: 4rem;
+          width: 95%;
+        }
+      }
+    }
+  }
+  @include mediaQuery($break-lg){
+    &__wrapper{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      &__img{
+        img{
+          padding-top: 15rem;
+          @include imgFit(60rem, 100%)
+        }
+      }
+      &__tl{
+        h1{
+          font-size: 4rem;
+        }
+        p{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+.uni{
+  background: hsl(0, 0%, 95%);
+  &__wrapper{
+    &__tl{
+      text-align: center;
+      margin: 0 2rem;
+      h1{
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        font-size: 3.5rem;
+      }
+      p{
+        font-size: 2rem;
+        padding-bottom: 4rem;
+      }
+    }
+    &__comp{
+    &__tr{
+      margin-bottom: 3rem;
+      &__txt{
+        background: $clr-light;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        border-radius: 2rem;
+        img{
+         padding-bottom: 3rem;
+         padding-left: 1rem;
+          @include imgFit (10%, 10%)
+         }
+         h5{  
+          font-size: 1.8rem;
+          font-weight: 400;
+          padding-bottom: 3rem;
+          padding: 0 2rem;
+      }
+      p{
+        text-align: right;
+        padding-top: 4rem;
+        margin-left: 25rem;
+        padding-right: 3rem;
+        color: $clr-violet;
+      }
+      }
+
+      
+    }
+  }
+  }
+  &__btn{
+
+    h1{
+      padding: 4rem 0 2rem 0;
+      font-size: 3rem;
+      text-align: center;
+    }
+    &__a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    a{
+      font-size: 2rem;
+      padding: 2rem 0;
+      text-align: center;
+      i{
+        padding: 0 1rem;
+      }
+    }
+  }
+  }
+  @include mediaQuery ($break-lg){
+    &__wrapper{
+      &__tl{
+        text-align: left;
+        p{
+          padding-bottom: 8rem;
+        }
+      }
+      &__comp{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2rem;
+        &__tr{
+          &__txt{
+            img{
+              @include imgFit(5rem, 15%)
+            }
+            h5{
+              margin: 0 auto;
+              text-align: justify;
+            }
+            p{
+              text-align: right;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    &__btn{
+      padding-top: 8rem;
+      padding-bottom: 10rem;
+      &__a{
+        flex-direction: row;
+        justify-content: center;
+        a{
+          padding: 2rem;
+        }
+      }
+    }
+}
 }
