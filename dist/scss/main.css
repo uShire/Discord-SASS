@@ -1555,6 +1555,9 @@ body {
   gap: 2rem;
   cursor: pointer;
 }
+.header__actions a {
+  font-size: 1.3rem;
+}
 .header__actions .toggle__menu span {
   width: 2.5rem;
   height: 0.3rem;
@@ -2212,7 +2215,7 @@ body {
   background: hsl(0, 0%, 100%);
   padding: 4rem;
   border-radius: 2rem;
-  align-items: center;
+  justify-content: center;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -2278,6 +2281,8 @@ body {
   }
   .apps_content_item {
     padding: 8rem;
+    margin-bottom: 0;
+    justify-content: center;
   }
   .apps_content_item_text p {
     max-width: 38rem;

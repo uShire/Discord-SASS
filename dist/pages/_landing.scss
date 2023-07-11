@@ -588,7 +588,7 @@
       background: $clr-light;
       padding: 4rem;
       border-radius: 2rem;
-      align-items: center;
+      justify-content: center;
       text-align: center;
       margin-bottom: 2rem;
       img{
@@ -656,6 +656,8 @@
       grid-gap: 3rem;
       &_item{
         padding: 8rem;
+        margin-bottom: 0;
+        justify-content: center;
         &_text{
           p{
             max-width: 38rem;
