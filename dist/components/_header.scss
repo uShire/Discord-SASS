@@ -69,6 +69,10 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    cursor: pointer;
+    a {
+      font-size: 1.3rem;
+    }
     .toggle__menu {
       span {
         width: 2.5rem;
