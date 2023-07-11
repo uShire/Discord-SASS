@@ -31,11 +31,11 @@ body {
 
 /*--------COLORS-----------*/
 .bg--violet {
-  background: hsl(235, 83%, 59%);
+  background: hsl(235, 87%, 65%);
 }
 
 .text--violet {
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
 }
 
 .bg--light {
@@ -1431,7 +1431,7 @@ body {
   padding: 3rem 0;
 }
 .footer__desc__item h4 {
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
   margin-bottom: 1.5rem;
 }
 .footer__desc__item ul {
@@ -1446,7 +1446,7 @@ body {
   text-decoration: underline;
 }
 .footer__btn {
-  border-top: 1px solid hsl(235, 83%, 59%);
+  border-top: 1px solid hsl(235, 87%, 65%);
   padding-top: 3rem;
   display: flex;
   align-items: center;
@@ -1635,7 +1635,7 @@ body {
   background: hsl(0, 0%, 100%);
 }
 .btn.bg--violet {
-  background: hsl(235, 83%, 59%);
+  background: hsl(235, 87%, 65%);
   color: hsl(0, 0%, 100%);
 }
 .btn.bg--dark {
@@ -1677,7 +1677,7 @@ body {
     background-image: url("../img/Discord Home Banner.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: hsl(235, 83%, 59%);
+    background-color: hsl(235, 87%, 65%);
     background-position-y: bottom;
     min-height: 650px;
     display: flex;
@@ -1807,11 +1807,479 @@ body {
   }
 }
 
+/*-------COLLEGE PAGE------*/
+.college {
+  padding-top: 13rem;
+  background-image: url("../img/college-bg.png");
+  background-size: cover;
+  min-height: 720px;
+}
+.college__content {
+  color: hsl(0, 0%, 100%);
+  margin: 0 1rem;
+  text-align: center;
+}
+.college__content h1 {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+  line-height: 1;
+}
+.college__content p {
+  padding-bottom: 5rem;
+  line-height: 2;
+  margin: 0 3rem;
+}
+.college__content__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.college__content__btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.college__content__btn a i {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .college {
+    background-image: url(../img/college-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(235, 87%, 65%);
+    background-position-y: bottom;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+  }
+  .college__content {
+    text-align: justify;
+  }
+  .college__content h1 {
+    padding-top: 13rem;
+    max-width: 30%;
+  }
+  .college__content p {
+    max-width: 30%;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .college__content__btn {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .college__content__btn a {
+    gap: 1rem;
+  }
+  .college__content__btn a i {
+    display: contents;
+  }
+}
+
+.yt {
+  background: hsl(0, 0%, 95%);
+}
+.yt__wrapper {
+  padding: 4rem 0;
+  text-align: center;
+}
+.yt__wrapper h1 {
+  margin: 0 2rem;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.yt__wrapper p {
+  margin: 0 4rem;
+  padding-bottom: 3rem;
+}
+.yt__wrapper iframe {
+  border-radius: 20px;
+  width: 85%;
+  height: 25rem;
+}
+@media screen and (min-width: 960px) {
+  .yt__wrapper {
+    padding-top: 8rem;
+  }
+  .yt__wrapper h1 {
+    font-size: 4rem;
+  }
+  .yt__wrapper p {
+    font-size: 2rem;
+    padding-bottom: 5rem;
+  }
+  .yt__wrapper iframe {
+    width: 75%;
+    height: 50rem;
+  }
+}
+
+.nd__wrapper__img img {
+  padding-top: 5rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: center center;
+     object-fit: center center;
+  display: block;
+}
+.nd__wrapper__tl {
+  margin: 0 1rem;
+}
+.nd__wrapper__tl h1 {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  font-size: 3.5rem;
+}
+.nd__wrapper__tl p {
+  font-size: 2rem;
+  padding-bottom: 5rem;
+  width: 95%;
+}
+.nd__wrapper__comp__con {
+  margin: 0 1rem;
+}
+.nd__wrapper__comp__con i {
+  color: hsl(235, 87%, 65%);
+  background: hsl(0, 0%, 95%);
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+.nd__wrapper__comp__con h1 {
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+.nd__wrapper__comp__con p {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  width: 95%;
+}
+@media screen and (min-width: 960px) {
+  .nd__wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    align-items: center;
+    gap: 5rem;
+  }
+  .nd__wrapper .nd__text__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+  .nd__wrapper__img img {
+    padding-top: 15rem;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-fit: center center;
+       object-fit: center center;
+    display: block;
+  }
+  .nd__wrapper__tl h1 {
+    font-size: 4rem;
+  }
+  .nd__wrapper__tl p {
+    font-size: 2rem;
+  }
+}
+
+.uni {
+  background: hsl(0, 0%, 95%);
+}
+.uni__wrapper__tl {
+  text-align: center;
+  margin: 0 2rem;
+}
+.uni__wrapper__tl h1 {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  font-size: 3.5rem;
+}
+.uni__wrapper__tl p {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+}
+.uni__wrapper__comp__tr {
+  padding: 2.5rem 2rem;
+  background: hsl(0, 0%, 100%);
+  height: 50rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+.uni__wrapper__comp__tr__txt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.uni__wrapper__comp__tr__txt img {
+  width: 10%;
+  height: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-fit: center center;
+     object-fit: center center;
+  display: block;
+}
+.uni__wrapper__comp__tr__txt h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 3rem;
+  padding: 0 2rem;
+}
+.uni__wrapper__comp__tr__txt p {
+  text-align: right;
+  align-self: baseline;
+  color: hsl(235, 87%, 65%);
+  width: 100%;
+}
+.uni__btn h1 {
+  padding: 4rem 0 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+.uni__btn__a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.uni__btn__a a {
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+.uni__btn__a a i {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 960px) {
+  .uni__wrapper__tl {
+    text-align: left;
+  }
+  .uni__wrapper__comp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .uni__wrapper__comp__tr__txt {
+    position: relative;
+  }
+  .uni__wrapper__comp__tr__txt img {
+    width: 5rem;
+    height: 5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-fit: center center;
+       object-fit: center center;
+    display: block;
+  }
+  .uni__wrapper__comp__tr__txt h5 {
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .uni__wrapper__comp__tr__txt p {
+    position: absolute;
+    bottom: 0;
+  }
+  .uni__btn {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+  .uni__btn__a {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .uni__btn__a a {
+    padding: 2rem;
+  }
+}
+
+/*-------SUPPORT PAGE------*/
+.hp {
+  background-image: url("../img/support.png");
+  background-size: 205% 100%;
+  background-position: center;
+  height: 43rem;
+  width: 100%;
+}
+.hp__wrapper__text h1 {
+  padding-top: 13rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.hp__wrapper__text__bar {
+  padding-top: 5rem;
+  text-align: center;
+}
+.hp__wrapper__text__bar form input {
+  font-size: 2rem;
+  padding-right: 25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 960px) {
+  .hp {
+    background-size: cover;
+  }
+  .hp__wrapper__text__bar form input {
+    padding-right: 45rem;
+  }
+}
+
+.gd__wrapper__components__title {
+  margin: 0 1rem;
+}
+.gd__wrapper__components__title h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding-top: 7rem;
+}
+.gd__wrapper__components__title p {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+}
+.gd__wrapper__components__title p a {
+  color: hsl(235, 87%, 65%);
+}
+.gd__wrapper__components__box__1 ul a li {
+  border: 1px solid hsl(0, 0%, 90%);
+  box-sizing: border-box;
+  border-radius: 1rem;
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.gd__wrapper__components__box__1 ul a li i {
+  font-size: 6rem;
+  padding-top: 3rem;
+  color: hsl(39, 50%, 70%);
+}
+.gd__wrapper__components__box__1 ul a li h2 {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  color: hsl(235, 87%, 65%);
+}
+.gd__wrapper__components__box__1 ul a li p {
+  text-align: center;
+  color: hsl(206, 9%, 15%);
+}
+.gd__wrapper__components__box__1 ul a li:hover {
+  background: hsl(0, 0%, 98%);
+}
+.gd__wrapper__components__box__2 ul a li {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 1rem;
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.gd__wrapper__components__box__2 ul a li i {
+  font-size: 6rem;
+  padding-top: 3rem;
+  color: hsl(39, 50%, 70%);
+}
+.gd__wrapper__components__box__2 ul a li h2 {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  color: hsl(235, 87%, 65%);
+}
+.gd__wrapper__components__box__2 ul a li p {
+  text-align: center;
+  color: hsl(206, 9%, 15%);
+}
+.gd__wrapper__components__box__2 ul a li:hover {
+  background: hsl(0, 0%, 98%);
+}
+@media screen and (min-width: 960px) {
+  .gd__wrapper__components__title p {
+    padding-bottom: 8rem;
+  }
+  .gd__wrapper__components__box__1 ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
+  .gd__wrapper__components__box__1 ul a li {
+    margin: 0;
+    width: 25rem;
+  }
+  .gd__wrapper__components__box__2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 2rem;
+  }
+  .gd__wrapper__components__box__2 ul a li {
+    margin: 0;
+    width: 25rem;
+  }
+}
+
+.find__wrapper__contain__title {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.find__wrapper__contain__boxes ul a li {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 1rem;
+  height: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+.find__wrapper__contain__boxes ul a li i {
+  font-size: 6rem;
+  padding-top: 3rem;
+  color: hsl(39, 50%, 70%);
+}
+.find__wrapper__contain__boxes ul a li h2 {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  color: hsl(235, 87%, 65%);
+}
+.find__wrapper__contain__boxes ul a li p {
+  text-align: center;
+  color: hsl(206, 9%, 15%);
+}
+.find__wrapper__contain__boxes ul a li:hover {
+  background: hsl(0, 0%, 98%);
+}
+@media screen and (min-width: 960px) {
+  .find__wrapper__contain__boxes ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 6rem;
+  }
+  .find__wrapper__contain__boxes ul a li {
+    height: 30rem;
+    width: 25rem;
+    margin: 0;
+  }
+}
+
 .safety_banner {
   max-width: 120rem;
   margin: 0 auto;
   align-items: center;
-  background: hsl(235, 83%, 59%);
+  background: hsl(235, 87%, 65%);
 }
 .safety_banner_item {
   padding: 10rem 1rem;
@@ -1875,7 +2343,7 @@ body {
 }
 .safety_tips_sqr_left_content h1 {
   font-size: 4rem;
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
   margin-bottom: 1.5rem;
 }
 .safety_tips_sqr_left_content img {
@@ -1919,7 +2387,7 @@ body {
 .safety_tips_sqr_right_item_text h3 {
   font-size: 1.7rem;
   font-weight: 700;
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
   margin-bottom: 0.5rem;
 }
 .safety_tips_sqr_right_item_text h2 {
@@ -1928,7 +2396,7 @@ body {
   line-height: 3rem;
 }
 .safety_tips_sqr_right_item:hover a .safety_tips_sqr_right_item_text h2 {
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
 }
 .safety_mod {
   max-width: 120rem;
@@ -1947,7 +2415,7 @@ body {
 }
 .safety_mod_left_content h1 {
   font-size: 4rem;
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
   margin-bottom: 1.5rem;
 }
 .safety_mod_left_content img {
@@ -1991,7 +2459,7 @@ body {
 .safety_mod_right_item_text h3 {
   font-size: 1.7rem;
   font-weight: 700;
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
   margin-bottom: 0.5rem;
 }
 .safety_mod_right_item_text h2 {
@@ -2000,7 +2468,7 @@ body {
   line-height: 3rem;
 }
 .safety_mod_right_item:hover a .safety_mod_right_item_text h2 {
-  color: hsl(235, 83%, 59%);
+  color: hsl(235, 87%, 65%);
 }
 @media screen and (min-width: 960px) {
   .safety_banner {
