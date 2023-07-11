@@ -152,6 +152,7 @@
     }
   }
 }
+<<<<<<< HEAD
 /*-------COLLEGE PAGE------*/
 
 .college{
@@ -551,10 +552,139 @@
               }
               li:hover{
                 background: hsl(0, 0%, 98%);
+=======
+
+.safety{
+  &_banner{
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+    background: $clr-violet;
+      &_item{
+          padding: 10rem 1rem;
+          &_text{
+              h1{
+                  font-size: 4rem;
+                  font-weight: 800;
+                  line-height: 3.5rem;
+                  margin-bottom: 3rem;
+                  color: $clr-light;
+                  padding-left: 1rem;
+              }
+          }
+          &_list{
+              margin-bottom: 2.75rem;
+              a{
+                padding: 1rem;
+                max-width: 100%;
+                display: inline-block; 
+                border-radius: .5rem;
+                h2{
+                  font-size: 2.3rem;
+                  font-weight: 750;
+                  line-height: 3rem;
+                  margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 1.55rem;
+                    margin-bottom: 1.5rem;
+                    line-height: 2.3rem;
+                }
+                h4{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                }
+                &:hover{
+                  background: hsl(235, 83%, 65%);
+                  transition: all .25s;
+                }
+              }
+          }
+          &_content{
+            
+          }
+          
+      }
+      &_img{
+            display: none;
+          }
+      
+  }
+  &_tips_sqr{
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2rem;
+    background: hsl(0, 0%, 96%);
+    &_left{
+      margin-bottom: 5rem;
+      &_content{
+        margin-bottom: 1rem;
+        h1{
+          font-size: 4rem;
+          color: $clr-violet;
+          margin-bottom: 1.5rem;
+        }
+        img{
+          @include imgFit(100%, 100%);
+          justify-content: center;
+          margin-bottom: 1.5rem;
+        }
+        p{
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          margin-bottom: 1.75rem;
+        }
+      }
+      &_btn{
+        a {
+          width: fit-content;
+          background: hsl(235, 83%, 65%);
+          margin-top: 2.5rem;
+          padding: 1.5rem 3rem;
+        }
+      }
+    }
+    &_right{
+      &_item{
+        &_img{
+          img{
+            @include imgFit(100%, 100%);
+            justify-content: center;
+            border-radius: 1.5rem;
+            margin-bottom: 1.2rem;
+          }
+        }
+        &_text{
+          margin-bottom: 3rem;
+          h3{
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: $clr-violet;
+            margin-bottom: .5rem;
+          }
+          h2{
+            font-size: 2.5rem;
+            font-weight: 750;
+            line-height: 3rem;
+          }
+        }
+        &:hover{
+          a{
+            .safety_tips_sqr_right_item_text{
+              h2{
+                color: $clr-violet;
+>>>>>>> kyna-070723
               }
             }
           }
         }
+<<<<<<< HEAD
         &__2{
           ul{
             a{
@@ -583,6 +713,77 @@
               }
               li:hover{
                 background: hsl(0, 0%, 98%);
+=======
+      }
+    }
+  }
+  &_mod{
+    max-width: 120rem;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 5rem 2rem;
+    background: hsl(0, 0%, 96%);
+    &_left{
+      margin-bottom: 5rem;
+      &_content{
+        margin-bottom: 1rem;
+        h1{
+          font-size: 4rem;
+          color: $clr-violet;
+          margin-bottom: 1.5rem;
+        }
+        img{
+          @include imgFit(95%, 100%);
+          justify-content: center;
+          margin-bottom: 2rem;
+        }
+        p{
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          margin-bottom: 1.75rem;
+        }
+      }
+      &_btn{
+        a {
+          width: fit-content;
+          background: hsl(235, 83%, 65%);
+          margin-top: 2.5rem;
+          padding: 1.5rem 3rem;
+        }
+      }
+    }
+    &_right{
+      &_item{
+        &_img{
+          img{
+            @include imgFit(100%, 100%);
+            justify-content: center;
+            border-radius: 1.5rem;
+            margin-bottom: 1.2rem;
+          }
+        }
+        &_text{
+          margin-bottom: 3rem;
+          h3{
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: $clr-violet;
+            margin-bottom: .5rem;
+          }
+          h2{
+            font-size: 2.5rem;
+            font-weight: 750;
+            line-height: 3rem;
+          }
+        }
+        &:hover{
+          a{
+            .safety_mod_right_item_text{
+              h2{
+                color: $clr-violet;
+>>>>>>> kyna-070723
               }
             }
           }
@@ -591,6 +792,7 @@
     }
   }
   @include mediaQuery($break-lg){
+<<<<<<< HEAD
     &__wrapper{
       &__components{
         &__title{
@@ -671,10 +873,127 @@
             }
           }
         }
+=======
+    &_banner{
+      max-width: 140rem;
+      padding: 12rem 7rem;
+      padding-bottom: 0rem;
+      display: unset;
+      display: flex;
+      gap: 12rem;
+      align-items: center;
+      &_item{
+        &_text{
+          h1{
+            font-size: 5.5rem;
+            line-height: 5rem;
+            max-width: 60rem;
+            padding-left: 1rem;
+          }
+        }
+        &_list{
+          a{
+            p{
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+      &_img{
+        display: unset;
+      }
+    }
+    &_tips_sqr{
+      display: unset;
+      display: grid;
+      grid-template-columns: 1.20fr 2.80fr;
+      grid-gap: 4rem;
+      background: hsl(0, 0%, 96%);
+      border-radius: .5rem;
+      margin-top: 8rem;
+      margin-bottom: 2rem;
+      padding: 5rem 3.5rem 3rem 3.5rem;
+      &_right{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 2rem;
+        &_item{
+          margin-bottom: 0;
+          &_img{
+            img{
+              max-width: 50rem;
+              justify-content: center;
+              border-radius: 1.5rem;
+              margin-bottom: 1.2rem;
+            }
+          }
+        }
+      }
+      &_left_content{
+        h1{
+          font-size: 4.8rem;
+        }
+        p{
+          font-size: 1.55rem;
+        }
+      }
+    }
+    &_mod{
+      display: unset;
+      display: grid;
+      grid-template-columns: 1.20fr 2.80fr;
+      grid-gap: 4rem;
+      background: hsl(0, 0%, 96%);
+      border-radius: .5rem;
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+      padding: 5rem 3.5rem 3rem 3.5rem;
+      &_right{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 2rem;
+        &_item{
+          margin-bottom: 0;
+          &_img{
+            img{
+              max-width: 50rem;
+              justify-content: center;
+              border-radius: 1.5rem;
+              margin-bottom: 1.2rem;
+            }
+          }
+        }
+      }
+      &_left_content{
+        h1{
+          font-size: 4.8rem;
+        }
+        p{
+          font-size: 1.57rem;
+        }
+      }
+    }
+  }
+}
+
+.streamkit{
+  padding-top: 11rem;
+  padding-bottom: 4rem;
+  &_content{
+    &_text{
+      h1{
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+      }
+      p{
+        font-size: 1.5rem;
+>>>>>>> kyna-070723
       }
     }
   }
   @include mediaQuery($break-lg){
+<<<<<<< HEAD
     &__wrapper{
       &__contain{
         &__boxes{
@@ -690,6 +1009,195 @@
                 margin: 0;
               }
             }
+=======
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    &_content_text{
+      h1{
+        font-size: 6rem;
+        margin-bottom: 1rem;
+      }
+      p{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.bots{
+  &_wrapper{
+    padding: 4rem 0;
+  }
+  &_content{
+    margin-bottom: 5rem;
+    &_text{
+      h2{
+        font-size: 1.7rem;
+        margin-bottom: 2.5rem;
+      }
+      p{
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        max-width: 40rem;
+      }
+    }
+  }
+  &_tools{
+    &_item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      img{
+        @include imgFit(45%, 100%);
+        margin-bottom: .5rem;
+      }
+      h2{
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+      p{
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  @include mediaQuery($break-lg){
+    &_wrapper{
+      padding: 11rem 0;
+    }
+    &_content{
+      h2{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 1.9rem;
+        line-height: 3rem;
+        max-width: none;
+        margin-bottom: 9rem;
+      }
+    }
+    &_tools{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      &_item{
+        img{
+          @include imgFit(50%, 100%);
+        }
+        p{
+          font-size: 1.9rem;
+          line-height: 3rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.apps{
+  background: hsl(0, 0, 95%);
+  &_wrapper{
+    padding: 4rem 0;
+  }
+  &_title{
+    margin-bottom: 5rem;
+    text-align: center;
+    h1{
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+    p{
+      font-size: 1.55rem;
+      line-height: 2.5rem;
+    }
+  }
+  &_content{
+    padding: 0 1rem;
+    padding-bottom: 5rem;
+    &_item{
+      background: $clr-light;
+      padding: 4rem;
+      border-radius: 2rem;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 2rem;
+      img{
+        max-width: 7rem;
+        margin-bottom: 1rem;
+      }
+      &_text{
+        margin-bottom: 2rem;
+        h2{
+          font-size: 3rem;
+          font-weight: 700;
+          margin-bottom: 1.5rem;
+        }
+        p{
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          margin-bottom: 2.5rem;
+        }
+        h5{
+          font-size: 1.3rem;
+          font-weight: 100;
+          margin-bottom: 1rem;
+          text-align: left;
+          max-width: 35rem;
+          i{
+            font-size: 2rem;
+            margin-right: 1rem;
+            color: hsl(150, 100%, 52%);
+          }
+        }
+      }
+      &_btn{
+        a{
+          display: inline-flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 1.75rem;
+          font-size: 1.4rem;
+        }
+      }
+      &_link{
+        font-size: 1.4rem;
+        display: inline-flex;
+        gap: 2rem;
+      }
+    }
+  }
+  @include mediaQuery($break-lg){
+    &_wrapper{
+      padding: 11rem 0;
+    }
+    &_title{
+      margin-bottom: 7rem;
+      h1{
+        font-size: 4.5rem;
+      }
+      p{
+        font-size: 1.9rem;
+        line-height: 3rem;
+      }
+    }
+    &_content{
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      grid-gap: 3rem;
+      &_item{
+        padding: 8rem;
+        margin-bottom: 0;
+        justify-content: center;
+        &_text{
+          p{
+            max-width: 38rem;
+          }
+          h5{
+            max-width: 40rem;
+>>>>>>> kyna-070723
           }
         }
       }
